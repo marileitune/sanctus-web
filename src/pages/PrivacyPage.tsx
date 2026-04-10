@@ -6,7 +6,7 @@ import { contactEmail } from "constants/constants";
 const PrivacyPage = () => {
   return (
     <Container className="bg-white text-[#595959] min-h-screen">
-      <div className=" text-2xl font-bold text-center ">PRIVACY POLICY</div>
+      <h1 className="text-2xl font-bold text-center">PRIVACY POLICY</h1>
       <div className="text-sm text-[#595959] text-center mt-2">
         Last updated March 01, 2025
       </div>
@@ -41,9 +41,9 @@ const PrivacyPage = () => {
       <div className="mt-6">
         <p className="font-bold">Questions or concerns?</p>
         <p>
-          If you have any questions or concerns, please contact us at
+          If you have any questions or concerns, please contact us at{" "}
           <a href={contactEmail} className="text-[#3030F1] break-words">
-            include.add@gmail.com
+            hello@include.agency
           </a>
         </p>
       </div>

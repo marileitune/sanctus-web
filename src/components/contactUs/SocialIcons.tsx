@@ -9,8 +9,18 @@ const SocialIcons = () => (
     transition={{ duration: 1, delay: 1.4 }}
     viewport={{ once: true }}
   >
-    <SocialIcon url={INSTAGRAM_URL} />
-    <SocialIcon url={FACEBOOK_URL} />
+    <SocialIcon
+      url={INSTAGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Sanctus on Instagram"
+    />
+    <SocialIcon
+      url={FACEBOOK_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Sanctus on Facebook"
+    />
   </motion.div>
 );
 

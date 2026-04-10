@@ -5,6 +5,7 @@
     "nav_item_store":"Reviews",
     "nav_item_contact": "Contact us",
     "main_btn": "ACCESS NOW",
+    "main_subtitle": "Pray. Meditate. Grow in faith.",
     "about_text": "Sanctus is an application that has several features and new content daily, to provide the best experience for you to pray, in a practical way, anytime and anywhere. If you are looking to persevere and walk with God, don't forget to use Sanctus.",
     "features_one_title":"Follow the liturgy daily",
     "features_one_text":"Listen to what God has to say every day through the first reading, psalm, second reading and gospel and meditate inspired by the words of Pope Francis.",
@@ -15,5 +16,9 @@
     "reviews_one_subtitle": "stars",
     "reviews_two_subtitle": "reviews",
     "reviews_three_subtitle": "downloads",
-    "contact_store_badge": "SOON"
+    "contact_store_badge": "SOON",
+    "cross_mountain_alt": "Cross on a mountain at sunset",
+    "select_language": "Language",
+    "footer_rights": "All rights reserved.",
+    "footer_made_by": "Made by"
 }

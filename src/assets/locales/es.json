@@ -5,6 +5,7 @@
     "nav_item_store":"Evaluaciones",
     "nav_item_contact": "Contáctenos",
     "main_btn": "ACCEDER AHORA",
+    "main_subtitle": "Reza. Medita. Crece en la fe.",
     "about_text": "Sanctus es una aplicación que cuenta con varias funcionalidades y nuevos contenidos todos los días, para proporcionarte la mejor experiencia para que reces, de manera práctica, en cualquier momento y en cualquier lugar. Si buscas perseverar y caminar con Dios, asegúrese de usar Sanctus.",
     "features_one_title":"Siga la liturgia diariamente",
     "features_one_text":" Escuche lo que Dios tiene que decir cada día a través de la primera lectura, el salmo, la segunda lectura y el evangelio y medite inspirado por las palabras del Papa Francisco.",
@@ -15,5 +16,9 @@
     "reviews_one_subtitle": "estrellas",
     "reviews_two_subtitle": "evaluaciones",
     "reviews_three_subtitle": "downloads",
-    "contact_store_badge": "EN BREVE"
+    "contact_store_badge": "EN BREVE",
+    "cross_mountain_alt": "Cruz en una montaña al atardecer",
+    "select_language": "Idioma",
+    "footer_rights": "Todos los derechos reservados.",
+    "footer_made_by": "Hecho por"
 }

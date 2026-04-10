@@ -12,7 +12,7 @@ const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary:
-      "bg-brand text-white rounded-lg transition-all duration-300 hover:bg-[#E84C4D] hover:opacity-90 active:bg-[#D54446] ",
+      "bg-[#C73434] text-white rounded-lg transition-all duration-300 hover:bg-[#B02E2E] active:bg-[#9A2828] ",
   };
 
   const sizes = {

@@ -9,7 +9,10 @@ import MenuButton from "components/menu/MenuButton";
 import BrandLink from "components/menu/BrandLink";
 import LanguageSelector from "components/menu/LanguageSelector";
 import useIsPrivacyPage from "hooks/useIsPrivacyPage";
+import useActiveSection from "hooks/useActiveSection";
 import { defaultLanguageCode, languages } from "constants/constants";
+
+const sections = ["home", "about", "features", "contact"];
 
 const NavMenu = () => {
   const location = useLocation();
@@ -20,6 +23,7 @@ const NavMenu = () => {
   const [selectedLanguage, setSelectedLanguage] = useState(currentLanguageCode);
 
   const isPrivacyPage = useIsPrivacyPage();
+  const activeSection = useActiveSection(sections);
   useEffect(() => {
     const changeNavbarColor = (): void => {
       if (location.pathname === "/privacy") {
@@ -36,11 +40,6 @@ const NavMenu = () => {
     };
   }, [location.pathname]);
 
-  useEffect(() => {
-    i18n.changeLanguage(defaultLanguageCode);
-    setSelectedLanguage(defaultLanguageCode);
-  }, []);
-
   const handleLanguageChange = (code: string): void => {
     const selectedCode = languages.find(
       (lang) => lang.country_code === code
@@ -54,20 +53,33 @@ const NavMenu = () => {
 
   return (
     <nav
+      aria-label="Main navigation"
       className={`fixed w-full z-10 transition duration-500 ${
         colorChange ? "bg-white shadow-md" : "bg-brand-light"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 py-0 lg:px-4 lg:py-4">
+      <div className="container mx-auto flex justify-between items-center px-4 py-3 lg:px-4 lg:py-4">
         <BrandLink />
         {isPrivacyPage ? null : (
           <>
-            <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-            <MenuItems isOpen={isOpen} setIsOpen={setIsOpen} t={t} />
+            <MenuButton
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+            />
+            <MenuItems
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              t={t}
+              selectedLanguage={selectedLanguage}
+              handleLanguageChange={handleLanguageChange}
+              activeSection={activeSection}
+            />
             <LanguageSelector
               selectedLanguage={selectedLanguage}
               handleLanguageChange={handleLanguageChange}
               t={t}
+              className="hidden lg:block ml-auto"
             />
           </>
         )}

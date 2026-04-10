@@ -14,7 +14,7 @@ const BrandLink = () => {
           <BrandIcon />
         </Link>
       ) : (
-        <LinkScroll to="home" offset={-50} className="cursor-pointer">
+        <LinkScroll to="home" href="#home" smooth={true} duration={150} offset={-50} className="cursor-pointer">
           <BrandIcon />
         </LinkScroll>
       )}

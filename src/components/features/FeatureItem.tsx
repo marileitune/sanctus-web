@@ -8,30 +8,26 @@ const FeatureItem = ({ feature, i }: FeatureItemProps) => {
   const { t } = useTranslation();
   return (
     <motion.div
-      key={feature}
-      className="w-full flex flex-col items-center text-center"
-      initial={{ opacity: 0, y: 50 }}
+      className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col"
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{
-        duration: 1,
-        delay: 0.1 * i,
-        ease: "easeOut",
-      }}
+      transition={{ duration: 0.7, delay: 0.15 * i, ease: "easeOut" }}
     >
-      <motion.div
-        className="circle flex justify-center items-center w-32 h-32 rounded-full bg-white shadow-md mb-10"
-        whileHover={{ scale: 1.1 }}
-        transition={{ type: "spring", stiffness: 300 }}
-      >
+      <div className="w-14 h-14 rounded-xl bg-brand/10 flex items-center justify-center mb-6 shrink-0">
         <img
           src={`${CLOUDINARY_BASE_URL}v1628619914/sanctus/feature-${feature}.svg`}
-          alt={`feature-${feature}-icon`}
-          className="w-20 h-20"
+          alt=""
+          aria-hidden="true"
+          width={28}
+          height={28}
+          className="w-7 h-7"
         />
-      </motion.div>
-      <H3>{t(`features_${feature}_title`)}</H3>
-      <p className="mt-4 text-lg">{t(`features_${feature}_text`)}</p>
+      </div>
+      <H3 className="mb-3">{t(`features_${feature}_title`)}</H3>
+      <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+        {t(`features_${feature}_text`)}
+      </p>
     </motion.div>
   );
 };

@@ -6,9 +6,9 @@ import AboutText from "components/aboutUs/AboutText";
 
 const AboutUs = () => {
   return (
-    <Element id={"about"}>
-      <Container className="container pl-0! px-0! md:py-0!">
-        <div className="flex flex-wrap min-h-[400px] ">
+    <Element name="about" id="about">
+      <Container className="bg-white pl-0! px-0! py-0! md:py-0!">
+        <div className="flex flex-wrap min-h-[500px]">
           <AboutImage />
           <AboutText />
         </div>

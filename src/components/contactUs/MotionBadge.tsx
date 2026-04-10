@@ -14,13 +14,14 @@ const MotionBadge = ({
   <motion.a
     href={href}
     target="_blank"
+    rel="noopener noreferrer"
     className={className}
     initial={initial}
     animate={animate}
     transition={transition}
     viewport={{ once: true }}
   >
-    <img src={src} alt={alt} className="w-40" />
+    <img src={src} alt={alt} width={160} height={62} className="w-40" />
     {children}
   </motion.a>
 );

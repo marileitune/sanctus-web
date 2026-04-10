@@ -4,7 +4,8 @@
     "nav_item_features": "Funcionalidades",
     "nav_item_store":"Avaliações",
     "nav_item_contact": "Fale conosco",
-    "main_btn": "ACCESSE AGORA",
+    "main_btn": "ACESSE AGORA",
+    "main_subtitle": "Ore. Medite. Cresça na fé.",
     "about_text": "Sanctus é um aplicativo que conta com diversas funcionalidades e novos conteúdos diariamente, para proporcionar a melhor experiência para você orar, de forma prática, a qualquer hora e em qualquer lugar. Se você busca perseverar e caminhar com Deus, não deixe de usar o Sanctus.",
     "features_one_title":"Leia a liturgia",
     "features_one_text":"Ouça o que Deus tem a dizer a cada dia por meio da primeira leitura, salmo, segundo leitura e evangelho e medite inspirado pelas palavras do Papa Francisco.",
@@ -15,5 +16,9 @@
     "reviews_one_subtitle": "estrelas",
     "reviews_two_subtitle": "avaliações",
     "reviews_three_subtitle": "downloads",
-    "contact_store_badge": "EM BREVE"
+    "contact_store_badge": "EM BREVE",
+    "cross_mountain_alt": "Cruz numa montanha ao pôr do sol",
+    "select_language": "Idioma",
+    "footer_rights": "Todos os direitos reservados.",
+    "footer_made_by": "Feito por"
 }

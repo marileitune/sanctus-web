@@ -2,7 +2,9 @@ const BrandIcon = () => {
   return (
     <img
       src={IMAGE_URL}
-      alt="brand-icon"
+      alt="Sanctus"
+      width={50}
+      height={50}
       className="size-[30px] lg:size-[50px]"
     />
   );

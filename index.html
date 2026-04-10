@@ -3,11 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FD5657" />
     <link
       rel="icon"
       href="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628852429/sanctus/favicon_plnyps.ico"
     />
     <title>Sanctus</title>
+    <meta name="description" content="Sanctus - App de orações, liturgia diária e Bíblia para seu dia a dia com Deus." />
+
+    <!-- Fonts: preconnect first, then load stylesheet (non-render-blocking vs CSS @import) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Preload LCP image so the browser discovers it immediately -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/main-img.svg"
+      fetchpriority="high"
+    />
   </head>
   <body>
     <div id="root"></div>

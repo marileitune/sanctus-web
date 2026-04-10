@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
 :root {
   margin: 0 !important;
   padding: 0 !important;
@@ -8,19 +6,20 @@
   font-weight: 400;
   color: black;
 
-  color-scheme: light dark;
+  color-scheme: light;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Montserrat', sans-serif !important;
-  padding: 0 !important; 
+  padding: 0 !important;
   margin: 0 !important;
-  background-color: #E5E5E5;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -48,6 +47,19 @@ button:focus-visible {
 @theme {
   --color-brand: #FD5657;
   --color-brand-light: #EDC8C8;
+}
+
+/* Layout heights for use in calc() */
+:root {
+  --navbar-h: 54px;
+  --footer-h: 88px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --navbar-h: 82px;
+    --footer-h: 68px;
+  }
 }
 
 

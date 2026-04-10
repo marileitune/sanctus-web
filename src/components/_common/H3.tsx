@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 
 const H3 = ({ children, className = "" }: H3Props) => {
   return (
-    <h2 className={`font-semibold text-xl lg:text-2xl ${className}`}>
+    <h3 className={`font-semibold tracking-tight text-lg lg:text-xl ${className}`}>
       {children}
-    </h2>
+    </h3>
   );
 };
 

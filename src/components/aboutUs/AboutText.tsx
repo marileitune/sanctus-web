@@ -7,15 +7,17 @@ const AboutText = () => {
   const { t } = useTranslation();
   return (
     <motion.div
-      className="w-full md:w-1/2 flex items-center px-4 md:px-20 pt-20 md:pb-20 lg:py-30"
-      initial={{ opacity: 0, x: -100 }}
+      className="w-full md:w-1/2 flex items-center px-8 md:px-16 lg:px-24 py-16 md:py-24"
+      initial={{ opacity: 0, x: -60 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <div>
         <H2>{t("nav_item_about")}</H2>
-        <p className="text-lg">{t("about_text")}</p>
+        <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+          {t("about_text")}
+        </p>
       </div>
     </motion.div>
   );

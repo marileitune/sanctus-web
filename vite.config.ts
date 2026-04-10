@@ -12,7 +12,20 @@ export default defineConfig({
       pages: path.resolve(__dirname, "src/pages"),
       utils: path.resolve(__dirname, "src/utils"),
       hooks: path.resolve(__dirname, "src/hooks"),
+      constants: path.resolve(__dirname, "src/constants"),
       App: path.resolve(__dirname, "src/App.jsx"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "motion": ["framer-motion"],
+          "i18n": ["i18next", "react-i18next"],
+          "social": ["react-social-icons"],
+        },
+      },
     },
   },
 });

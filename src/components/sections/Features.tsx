@@ -9,17 +9,15 @@ const Features = () => {
   const { t } = useTranslation();
 
   return (
-    <Element id="features">
-      <Container className="flex flex-col items-center bg-[#FFEECC]">
-        <div>
-          <H2>{t("nav_item_features")}</H2>
+    <Element name="features" id="features">
+      <Container className="flex flex-col items-center bg-[#FDF6E8]">
+        <div className="text-center">
+          <H2 centerAccent>{t("nav_item_features")}</H2>
         </div>
-        <div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 md:gap-x-20 justify-items-center">
-            {features.map((feature, i) => (
-              <FeatureItem key={feature} feature={feature} i={i} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-5xl">
+          {features.map((feature, i) => (
+            <FeatureItem key={feature} feature={feature} i={i} />
+          ))}
         </div>
       </Container>
     </Element>

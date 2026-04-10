@@ -1,38 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["jest", "node", "@types/jest", "@testing-library/jest-dom"],
-    "baseUrl": "./src",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "noEmit": true,
-    "strict": false,
-    "noImplicitAny": false,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "checkJs": false,
-    "skipLibCheck": true,
-    "paths": {
-      "components/*": ["components/*"],
-      "assets/*": ["assets/*"],
-      "pages/*": ["pages/*"],
-      "constants/*": ["constants/*"],
-      "hooks/*": ["hooks/*"],
-      "App": ["App"]
-    }
-  },
-  "include": [
-    "./src/**/*.tsx",
-    "./src/**/*.ts",
-    "**/*.d.ts",
-    "./src/setup/jest/setup.ts"
-  ],
-  "exclude": ["node_modules", "./src/**/*.test.ts", "./src/setup/**/*.ts"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

@@ -11,9 +11,9 @@ const ContactUs = () => {
   const { t } = useTranslation();
 
   return (
-    <Element id="contact">
-      <Container className="bg-[#CCDCEC] flex flex-col items-center text-center">
-        <H2>{t("nav_item_contact")}</H2>
+    <Element name="contact" id="contact">
+      <Container className="bg-gradient-to-b from-[#CCDCEC] to-[#dde8f2] flex flex-col items-center justify-center text-center min-h-[calc(100dvh-var(--navbar-h)-var(--footer-h))]">
+        <H2 centerAccent>{t("nav_item_contact")}</H2>
         <ContactEmail />
         <SocialIcons />
         <StoreBadges t={t} />
