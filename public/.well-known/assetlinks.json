@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.evangelhododiacatolico",
+      "sha256_cert_fingerprints": [
+        "8C:C3:0F:93:F6:EB:82:17:47:2C:95:18:B5:B5:66:57:5F:17:0B:48:12:69:5A:E0:5E:53:94:F5:76:CF:0D:27",
+        "A2:43:D8:36:D9:29:D2:7D:A7:07:46:12:D2:54:C7:53:C8:0B:0E:C5:F4:63:8F:01:04:6C:1C:F2:5A:C2:A4:B6"
+      ]
+    }
+  }
+]
