@@ -4,11 +4,11 @@ import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { H2 } from '@/components/ui/H2';
 import { useT } from '@/lib/i18n/useT';
-import { FeatureItem } from './FeatureItem';
+import { FeatureItem } from '@/components/home/FeatureItem';
 
 const features = ['one', 'two', 'three'] as const;
 
-export function Features() {
+export const Features = () => {
   const t = useT();
 
   return (
@@ -27,4 +27,4 @@ export function Features() {
       </Section>
     </section>
   );
-}
+};

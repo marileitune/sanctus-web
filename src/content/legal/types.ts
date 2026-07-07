@@ -22,10 +22,12 @@ export interface LegalContent {
   sections: LegalSection[];
 }
 
-export function p(text: string): LegalParagraphBlock {
-  return { type: 'paragraph', text };
-}
+export const p = (text: string): LegalParagraphBlock => ({
+  type: 'paragraph',
+  text,
+});
 
-export function list(items: string[]): LegalListBlock {
-  return { type: 'list', items };
-}
+export const list = (items: string[]): LegalListBlock => ({
+  type: 'list',
+  items,
+});

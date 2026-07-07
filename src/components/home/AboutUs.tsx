@@ -5,9 +5,9 @@ import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { H2 } from '@/components/ui/H2';
 import { useT } from '@/lib/i18n/useT';
-import { CategoryGrid } from './CategoryGrid';
+import { CategoryGrid } from '@/components/home/CategoryGrid';
 
-export function AboutUs() {
+export const AboutUs = () => {
   const t = useT();
 
   return (
@@ -37,4 +37,4 @@ export function AboutUs() {
       </Section>
     </section>
   );
-}
+};

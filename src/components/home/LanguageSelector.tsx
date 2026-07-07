@@ -13,7 +13,7 @@ const FLAG: Record<string, string> = {
   ES: '🇪🇸',
 };
 
-export function LanguageSelector({ className }: { className?: string }) {
+export const LanguageSelector = ({ className }: { className?: string }) => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -91,4 +91,4 @@ export function LanguageSelector({ className }: { className?: string }) {
       )}
     </div>
   );
-}
+};

@@ -1,12 +1,11 @@
-import en from './dictionaries/en.json';
-import pt from './dictionaries/pt.json';
-import es from './dictionaries/es.json';
-import type { AppLocale } from './locales';
+import en from '@/lib/i18n/dictionaries/en.json';
+import pt from '@/lib/i18n/dictionaries/pt.json';
+import es from '@/lib/i18n/dictionaries/es.json';
+import type { AppLocale } from '@/lib/i18n/locales';
 
 export type Dictionary = typeof en;
 
 const dictionaries: Record<AppLocale, Dictionary> = { en, pt, es };
 
-export function getDictionary(locale: AppLocale): Dictionary {
-  return dictionaries[locale];
-}
+export const getDictionary = (locale: AppLocale): Dictionary =>
+  dictionaries[locale];

@@ -5,14 +5,14 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/utils/cn';
 import { Container } from '@/components/ui/Container';
 import { useActiveSection } from '@/hooks/useActiveSection';
-import { MenuButton } from './MenuButton';
-import { MenuItems } from './MenuItems';
-import { BrandLink } from './BrandLink';
-import { LanguageSelector } from './LanguageSelector';
+import { MenuButton } from '@/components/home/MenuButton';
+import { MenuItems } from '@/components/home/MenuItems';
+import { BrandLink } from '@/components/home/BrandLink';
+import { LanguageSelector } from '@/components/home/LanguageSelector';
 
 const sections = ['home', 'about', 'features', 'contact'];
 
-export function NavMenu() {
+export const NavMenu = () => {
   const pathname = usePathname();
   const isLegalPage =
     pathname.includes('/privacy') || pathname.includes('/terms');
@@ -60,4 +60,4 @@ export function NavMenu() {
       </Container>
     </nav>
   );
-}
+};

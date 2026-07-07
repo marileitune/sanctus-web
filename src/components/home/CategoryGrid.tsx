@@ -12,7 +12,7 @@ const CATEGORIES = [
   { key: 'sant', bg: 'bg-sant-50', fg: 'text-sant-400', dot: 'bg-sant-400' },
 ] as const;
 
-export function CategoryGrid() {
+export const CategoryGrid = () => {
   const t = useT();
 
   return (
@@ -39,4 +39,4 @@ export function CategoryGrid() {
       </div>
     </div>
   );
-}
+};

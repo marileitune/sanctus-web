@@ -4,7 +4,7 @@ import CookieConsent from 'react-cookie-consent';
 import { useParams } from 'next/navigation';
 import { useT } from '@/lib/i18n/useT';
 
-export function CookieBanner() {
+export const CookieBanner = () => {
   const t = useT();
   const { locale } = useParams<{ locale: string }>();
 
@@ -51,4 +51,4 @@ export function CookieBanner() {
       </a>
     </CookieConsent>
   );
-}
+};

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { defaultLocale, locales } from '@/lib/i18n/locales';
 
-function detectLocale(request: NextRequest): string {
+const detectLocale = (request: NextRequest): string => {
   const cookieLocale = request.cookies.get('locale')?.value;
   if (
     cookieLocale &&
@@ -24,9 +24,9 @@ function detectLocale(request: NextRequest): string {
   }
 
   return defaultLocale;
-}
+};
 
-export function proxy(request: NextRequest) {
+export const proxy = (request: NextRequest) => {
   const { pathname } = request.nextUrl;
 
   const pathnameHasLocale = locales.some(
@@ -40,7 +40,7 @@ export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone();
   url.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(url);
-}
+};
 
 export const config = {
   matcher: ['/((?!_next|api|.*\\..*).*)'],
