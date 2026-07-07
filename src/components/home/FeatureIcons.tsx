@@ -1,4 +1,4 @@
-export function BooksIcon({ className }: { className?: string }) {
+export const BooksIcon = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
       <g>
@@ -126,9 +126,9 @@ export function BooksIcon({ className }: { className?: string }) {
       </g>
     </svg>
   );
-}
+};
 
-export function PrayingHandsIcon({ className }: { className?: string }) {
+export const PrayingHandsIcon = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
       <g>
@@ -155,9 +155,9 @@ export function PrayingHandsIcon({ className }: { className?: string }) {
       </g>
     </svg>
   );
-}
+};
 
-export function LightBulbIcon({ className }: { className?: string }) {
+export const LightBulbIcon = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
       <g>
@@ -255,4 +255,4 @@ export function LightBulbIcon({ className }: { className?: string }) {
       </g>
     </svg>
   );
-}
+};

@@ -3,7 +3,11 @@
 import { motion } from 'framer-motion';
 import { H3 } from '@/components/ui/H3';
 import { useT } from '@/lib/i18n/useT';
-import { LightBulbIcon, PrayingHandsIcon, BooksIcon } from './FeatureIcons';
+import {
+  LightBulbIcon,
+  PrayingHandsIcon,
+  BooksIcon,
+} from '@/components/home/FeatureIcons';
 
 const FEATURE_STYLES = {
   one: { icon: LightBulbIcon, bg: 'bg-litu-50' },
@@ -11,13 +15,13 @@ const FEATURE_STYLES = {
   three: { icon: BooksIcon, bg: 'bg-vers-50' },
 } as const;
 
-export function FeatureItem({
+export const FeatureItem = ({
   feature,
   i,
 }: {
   feature: keyof typeof FEATURE_STYLES;
   i: number;
-}) {
+}) => {
   const t = useT();
   const { icon: Icon, bg } = FEATURE_STYLES[feature];
 
@@ -40,4 +44,4 @@ export function FeatureItem({
       </p>
     </motion.div>
   );
-}
+};

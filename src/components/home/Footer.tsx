@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useT } from '@/lib/i18n/useT';
 
-export function Footer() {
+export const Footer = () => {
   const t = useT();
   const { locale } = useParams<{ locale: string }>();
 
@@ -42,4 +42,4 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};

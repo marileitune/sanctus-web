@@ -4,11 +4,11 @@ import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { H2 } from '@/components/ui/H2';
 import { useT } from '@/lib/i18n/useT';
-import { ContactEmail } from './ContactEmail';
-import { SocialIcons } from './SocialIcons';
-import { StoreBadges } from './StoreBadges';
+import { ContactEmail } from '@/components/home/ContactEmail';
+import { SocialIcons } from '@/components/home/SocialIcons';
+import { StoreBadges } from '@/components/home/StoreBadges';
 
-export function ContactUs() {
+export const ContactUs = () => {
   const t = useT();
 
   return (
@@ -23,4 +23,4 @@ export function ContactUs() {
       </Section>
     </section>
   );
-}
+};

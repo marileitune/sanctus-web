@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
-import { BrandIcon } from './BrandIcon';
+import { BrandIcon } from '@/components/home/BrandIcon';
 
-export function BrandLink() {
+export const BrandLink = () => {
   const pathname = usePathname();
   const { locale } = useParams<{ locale: string }>();
   const isLegalPage =
@@ -23,4 +23,4 @@ export function BrandLink() {
       <BrandIcon />
     </a>
   );
-}
+};

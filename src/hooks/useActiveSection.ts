@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-export function useActiveSection(ids: string[], offset = 100): string {
+export const useActiveSection = (ids: string[], offset = 100): string => {
   const [active, setActive] = useState(ids[0]);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ export function useActiveSection(ids: string[], offset = 100): string {
   }, [ids, offset]);
 
   return active;
-}
+};

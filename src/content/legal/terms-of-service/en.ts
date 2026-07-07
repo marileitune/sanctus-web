@@ -1,4 +1,4 @@
-import { p, list, type LegalContent } from '../types';
+import { p, list, type LegalContent } from '@/content/legal/types';
 
 const content: LegalContent = {
   title: 'Terms & Conditions',

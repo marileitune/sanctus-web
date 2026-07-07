@@ -1,11 +1,6 @@
-import en from './en';
-import pt from './pt';
-import es from './es';
-import type { AppLocale } from '@/lib/i18n/locales';
-import type { LegalContent } from '../types';
+import en from '@/content/legal/privacy-policy/en';
+import pt from '@/content/legal/privacy-policy/pt';
+import es from '@/content/legal/privacy-policy/es';
+import { createLegalContentGetter } from '@/content/legal/get-legal-content';
 
-const content: Record<AppLocale, LegalContent> = { en, pt, es };
-
-export function getPrivacyPolicyContent(locale: AppLocale): LegalContent {
-  return content[locale];
-}
+export const getPrivacyPolicyContent = createLegalContentGetter({ en, pt, es });

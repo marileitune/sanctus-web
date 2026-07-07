@@ -1,11 +1,10 @@
-import en from './en';
-import pt from './pt';
-import es from './es';
-import type { AppLocale } from '@/lib/i18n/locales';
-import type { LegalContent } from '../types';
+import en from '@/content/legal/terms-of-service/en';
+import pt from '@/content/legal/terms-of-service/pt';
+import es from '@/content/legal/terms-of-service/es';
+import { createLegalContentGetter } from '@/content/legal/get-legal-content';
 
-const content: Record<AppLocale, LegalContent> = { en, pt, es };
-
-export function getTermsOfServiceContent(locale: AppLocale): LegalContent {
-  return content[locale];
-}
+export const getTermsOfServiceContent = createLegalContentGetter({
+  en,
+  pt,
+  es,
+});
