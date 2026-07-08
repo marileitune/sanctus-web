@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
-import { BrandIcon } from '@/components/home/BrandIcon';
+import { BrandIcon } from '@/components/home/icons/BrandIcon';
 
 export const BrandLink = () => {
   const pathname = usePathname();

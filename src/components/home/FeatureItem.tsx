@@ -3,11 +3,9 @@
 import { motion } from 'framer-motion';
 import { H3 } from '@/components/ui/H3';
 import { useT } from '@/lib/i18n/useT';
-import {
-  LightBulbIcon,
-  PrayingHandsIcon,
-  BooksIcon,
-} from '@/components/home/FeatureIcons';
+import { LightBulbIcon } from '@/components/home/icons/LightBulbIcon';
+import { PrayingHandsIcon } from '@/components/home/icons/PrayingHandsIcon';
+import { BooksIcon } from '@/components/home/icons/BooksIcon';
 
 const FEATURE_STYLES = {
   one: { icon: LightBulbIcon, bg: 'bg-litu-50' },

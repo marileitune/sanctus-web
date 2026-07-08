@@ -1,21 +1,8 @@
 import { Section } from '@/components/ui/Section';
 import { Container } from '@/components/ui/Container';
 import { H3 } from '@/components/ui/H3';
-import type { LegalBlock, LegalContent } from '@/content/legal/types';
-
-const Block = ({ block }: { block: LegalBlock }) => {
-  if (block.type === 'list') {
-    return (
-      <ul className="mt-2 list-disc pl-5 space-y-1">
-        {block.items.map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>
-    );
-  }
-
-  return <p className="mt-2">{block.text}</p>;
-};
+import { LegalBlock } from '@/components/legal/LegalBlock';
+import type { LegalContent } from '@/content/legal/types';
 
 export const LegalPage = ({ content }: { content: LegalContent }) => (
   <Section
@@ -38,7 +25,7 @@ export const LegalPage = ({ content }: { content: LegalContent }) => (
         <div key={section.heading} className="mt-8">
           <H3>{section.heading}</H3>
           {section.blocks.map((block, i) => (
-            <Block key={i} block={block} />
+            <LegalBlock key={i} block={block} />
           ))}
         </div>
       ))}
